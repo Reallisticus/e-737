@@ -1,0 +1,57 @@
+{
+  "name": "e-737",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check": "next lint && tsc --noEmit",
+    "dev": "next dev --turbo",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "preview": "next build && next start",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-three/drei": "9.99.0",
+    "@react-three/fiber": "9.0.4",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "@tanstack/react-query": "^5.66.11",
+    "@trpc/client": "11.0.0-rc.819",
+    "@trpc/react-query": "11.0.0-rc.819",
+    "@trpc/server": "11.0.0-rc.819",
+    "framer-motion": "^12.4.7",
+    "geist": "^1.3.1",
+    "gsap": "^3.12.7",
+    "next": "^15.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "server-only": "^0.0.1",
+    "superjson": "^2.2.2",
+    "three": "^0.174.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.12",
+    "@types/node": "^20.17.22",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/three": "^0.174.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.2.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.38.1"
+  },
+  "packageManager": "pnpm@10.4.1"
+}
