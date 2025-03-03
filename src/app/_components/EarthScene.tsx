@@ -1,7 +1,8 @@
 "use client";
+
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import Earth from "./Earth";
 import { motion } from "framer-motion";
 
@@ -20,7 +21,12 @@ const EarthScene = () => {
       >
         <Suspense fallback={null}>
           <Earth />
-          <Environment preset="city" />
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            enableRotate={false}
+            autoRotate={false}
+          />
         </Suspense>
       </Canvas>
     </motion.div>
